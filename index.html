@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: #e6eff6;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .header {
+      width: 600px;
+      margin: 100px auto 0;
+    }
+    @media (max-width: 767px ) {
+      .header {
+        width: 300px;
+      }
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2 , 1fr);
+      background-color: white;
+      box-shadow: 1px 3px 14px rgb(193 191 191);
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    @media (max-width: 767px ) {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+    .container .content {
+      grid-area: 1 / 1 / 2 / 3;
+      padding: 30px;
+    }
+    .container .content h1 {
+      color: #26b4b5;
+    }
+    .container .content h2 {
+      color: #bccf4c;
+      font-size: 17px;
+    }
+    .container .content p {
+      margin: 8px 0 0;
+      font-size: 15px;
+      color: #818181;
+      line-height: 1.7;
+    }
+    .content-1 {
+      background-color: #26b4b5;
+      padding: 30px;
+      color: white;
+    }
+    .content-1 h2 span {
+      font-size: 14px;
+      color: #f1dddd;
+      font-weight: 400;
+    }
+    .content-1 h2 {
+      margin: 12px 0 0;
+    }
+    .content-1 h1 {
+      margin: 0
+    }
+    .content-1 p {
+      font-size: 15px;
+      color: #ffffffde;
+      
+    }
+    button {
+      background-color: #c4e530;
+      width: 100%;
+      border: none;
+      padding: 15px;
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0px 2px 7px #578b8b;
+      margin-top: 10px;
+    }
+    .content-2 {
+      background-color: #4abebd;
+      padding: 30px;
+      color: white;
+    }
+    .content-2 p {
+      line-height: 1.4;
+      font-size: 15px;
+      margin: 13px 45px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="content">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p>Gain access to our full library of tutorials along with expert code reviews. 
+          Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+      <div class="content-1">
+        <h1>Monthly Subscription</h1>
+        <h2>&dollar;29 <span>per month</span></h2>
+        <p>Full access for less than &dollar;1 a day</p>
+        <button>Sign Up</button>
+      </div>
+      <div class="content-2">
+        <h1>Why Us</h1>
+        <p>  Tutorials by industry experts
+          Peer &amp; expert code review
+          Coding exercises
+          Access to our GitHub repos
+          Community forum
+          Flashcard decks
+          New videos every week</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
